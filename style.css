@@ -3,12 +3,24 @@
     padding: 0px;
     box-sizing: border-box;
 }
+:root{
+    --secondary: rgb(247 247 247);
+    --primary: rgb(82 103 223 );
+    --tertiary: rgb(250 89 89 );
+    --textColor:rgb(145 148 162);
+    --headingcolor: rgb(36 42 69);
+}
+@font-face {
+    font-family: "Mont";
+    src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+/* header section start */
 header{
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 50px 90px;
-/* margin-top: 50px; */
 align-items: center;
 }
 .menu{
@@ -25,9 +37,10 @@ list-style: none;
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
+    text-transform: uppercase;
 }
 
-button{
+.menu button{
     border: none;
     outline: none;
     background-color: transparent;
@@ -35,10 +48,223 @@ button{
     background-color: rgb(250 89 89);
     padding: 13px 30px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .fa-bars{
     display: none;
 }
+/* header section end */
+
+/* hero Section start  */
+
+.hero{
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+  padding: 80px 0px ;
+  margin-bottom: 140px;
+
+}
+.content{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Mont;
+}
+.content h1{
+    font-size: 49px;
+    color: var(--headingcolor);
+    
+}
+.content p{
+    font-size: larger;
+    color: var(--textColor);
+}
+.heroImg{
+    width: 40%;
+}
+.heroImg img{
+    width: 100%;
+}
+.btns{
+    display: flex;
+   gap: 30px;
+}
+.btns button{
+    border: none;
+    outline: none;
+    color: transparent;
+    padding: 13px 30px;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(210, 208, 208);
+}
+.btns #btns1{
+    background-color: var(--primary);
+    color: white;
+}
+.btns #btns2{
+    background-color: var(--secondary);
+    color: black;
+}
+.btns #btns1:hover{
+     background-color: var(--secondary);
+    color: black;
+}
+.btns #btns2:hover{
+     background-color: var(--primary);
+    color: white;
+}
+.heroImg .rectangle{
+     width: 49%;
+     background-color: var(--primary);
+     height: 20rem;
+     border-top-left-radius: 9999px;
+     border-bottom-left-radius: 9999px;
+     position: absolute;
+     right: 0;
+     top: 55%;
+     z-index: -1;
+}
+
+/* hero Section end  */
+
+
+/* Features */
+.features{
+    width: 100%;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+   padding: 80px 0px;
+}
+.cnt{
+    width: 37%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: mont;
+}
+.cnt p{
+    color: var(--textColor);
+    
+}
+.cnt h2{
+    color: var(--headingcolor);
+    
+}
+
+/* Features */
+
+/* Features 1 start */
+.Featurecontent h3{
+    font-size: x-large;
+    color: var(--headingcolor);
+}
+.Featurecontent p{
+    color: var(--textColor);
+}
+.feature1{
+     width: 100%;
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: center;
+   gap: 90px;
+  padding: 80px 0px ;
+  background-color: var(--secondary);
+  
+}
+.Featurecontent{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Mont;
+    z-index: 5;
+}
+.FeatureImg1{
+    z-index: 4;
+}
+.rectangle1{
+     width: 37%;
+     background-color: var(--primary);
+     height: 20rem;
+     border-top-right-radius: 9999px;
+     border-bottom-right-radius: 9999px;
+     position: absolute;
+     z-index: 3;
+     left: 0;
+     bottom: -990px;
+}
+/* Features 1 end */
+
+
+/* Features 2 start */
+.feature2{
+     width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 90px;
+  padding: 80px 0px ;
+  background-color: var(--secondary);
+  /* z-index: 11; */
+}
+/* .FeatureImg2{
+z-index: 10;
+}
+.rectangle2{
+     width: 37%;
+     background-color: var(--primary);
+     height: 20rem;
+     border-top-right-radius: 9999px;
+     border-bottom-right-radius: 9999px;
+     position: absolute;
+     z-index: 9;
+     left: 0;
+     bottom: -990px;
+} */
+
+
+
+/* Features 2 end */
+
+
+/* Features 3 start*/
+.feature3{
+     width: 100%;
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: center;
+   gap: 90px;
+  padding: 80px 0px ;
+  background-color: var(--secondary);
+  
+}
+/* .rectangle3{
+     width: 37%;
+     background-color: var(--primary);
+     height: 20rem;
+     border-top-right-radius: 9999px;
+     border-bottom-right-radius: 9999px;
+     position: absolute;
+     z-index: 2;
+     left: 0;
+     bottom: -990px;
+} */
+
+/* .featuresbg{
+    background-color: var(--secondary);
+} */
+
+/* Features 3 end */
 
 
 
@@ -50,28 +276,125 @@ button{
       display: block;
 }
 header{
-    padding: 15px 30px;
+    width: 80%;
+padding: 30px 10px;
+
 }
 .menu{
     display: none;
+}
+.hero{
+    width: 80%;
+    flex-direction: column-reverse;
+    padding: 0px;
+    margin: 0px;
+}
+.heroImg .rectangle{
+    display: none;
+}
+.heroImg{
+    width: 85%;
+    align-items: center;
+}
+.content h1{
+    font-size: large;
+}
+.content p{
+    width: 100%;
+    font-size: 13px ;
+    text-align: center;
+}
+.content{
+    padding: 40px 0px 0px 0px;
+    width: 80%;
+    text-align: center;
+    text-align: center;
+}
+.btns{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.btns button{
+      width: 160px;      
+    padding: 10px 20px; 
+    font-size: 15px; 
+
+}
+.features{
+    width: 80%;
+    padding: 80px 0px 0px 0px;      
+    margin-top: 80px;
+}
+.cnt{
+    width: 95%;
+}
+.cnt p{
+    font-size: 13px;
+}
+.cnt h2{
+    font-size:20px ;
 }
 }
 
 @media screen and (min-width:481px) and (max-width:768px){
-    .fa-bars{
-      display: block;
-}
+   
 header{
-    padding: 25px 60px;
+    padding: 16px;
+    margin-top: 48px;
 }
-.menu{
-    display: none;
+.hero{
+    flex-direction: column-reverse;
+    padding: 16px;
+    margin-top:56px ;
 }
+.heroImg{
+    width: 75%;
+}
+.content{
+width: 100%;
+text-align: center;
+gap: 30px;
+
+}
+.heading h1{
+    font-size: 35px;
+}
+.btns{
+    justify-content: center;
+}
+
+
     
 }
 
 @media screen and (min-width:769px) and (max-width:1279px){
-    
+    header{
+    padding: 16px;
+    margin-top: 48px;
+}
+.hero{
+    flex-direction: column-reverse;
+    padding: 16px;
+    margin-top:56px ;
+}
+.heroImg{
+    width: 75%;
+}
+.content{
+width: 100%;
+text-align: center;
+gap: 30px;
+
+}
+.heading h1{
+    font-size: 35px;
+}
+.btns{
+    justify-content: center;
+}
 }
 
 @media screen and (min-width:1280px) {
