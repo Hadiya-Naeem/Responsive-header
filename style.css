@@ -255,6 +255,177 @@ list-style: none;
 
 
 
+.down{
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+}
+.down-content{
+    width: 75%;
+    text-align: center;
+    font-family: Mont;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.down-content h2{
+   color: var(--headingcolor);
+}
+.down-content p{
+    color: var(--textColor);
+}
+
+
+.browsers{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    align-items: start;
+    height: 70vh;
+    padding-bottom: 90px;
+}
+.chrome{
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 23%;
+    border-radius: 5px;
+}
+.imgContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      gap: 30px;
+      text-align: center;
+      border: 1px solid rgb(229, 231, 235);
+      border-top: none;
+      padding: 40px 20px;
+      width: 100%;
+}
+.chromeImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cntbrowser{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    font-family: Mont;
+}
+.chromeBtn{
+    width: 90%;
+    padding: 10px 0px;
+   margin-left: 14px;
+}
+.chromeBtn button{
+    width: 100%;
+    outline: none;
+    border: none ;
+    background-color: transparent;
+     background-color: var(--primary);
+    color: white;
+    padding: 15px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1);
+    font-size: 17px;
+}
+.chromeBtn button:hover{
+     background-color: var(--secondary);
+    color: black;
+}
+.cntbrowser h3{
+   color: var(--headingcolor);
+}
+.cntbrowser p{
+    color: var(--textColor);
+}
+#firefox{
+    align-self: center;
+}
+#opera{
+    align-self: flex-end;
+}
+
+
+.FAQ{
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+.FAQcontent{
+    font-family: Mont;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.FAQcontent h2{
+     color: var(--headingcolor);
+      text-align: center;
+}
+.FAQcontent p{
+     color: var(--textColor);
+     text-align: center;
+}
+.questions{
+    padding: 40px 0px;
+}
+.questionsfaq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.question1{
+    display: flex;
+    flex-direction:  row;
+    
+    padding: 20px;
+    border-bottom: 1px solid rgb(229, 231, 235);
+}
+#q1{
+gap: 300px;
+}
+#q2{
+    gap: 225px;
+}
+#q3{
+    gap: 305px;
+}
+#q4{
+    gap: 212px;
+}
+.questionsfaq button{
+     border: none;
+    outline: none;
+    color: white;
+    width: 120px;
+    background: var(--primary);
+    padding: 13px 10px;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(210, 208, 208);
+}
+.questionsfaq button:hover{
+    background-color: var(--secondary);
+    color: black;
+}
+
+
+
+
+
+
 @media screen and (min-width:0px) and (max-width:480px){
 /* header start */
 
